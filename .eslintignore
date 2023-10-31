@@ -1,0 +1,15 @@
+# Astro files
+
+dist
+
+# Vercel files
+
+.vercel
+
+# Jest files
+
+coverage
+
+# Dependency directories
+
+node_modules

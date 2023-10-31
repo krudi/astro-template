@@ -1,0 +1,33 @@
+extends:
+  - 'plugin:@typescript-eslint/recommended'
+  - "plugin:prettier/recommended"
+  - "plugin:astro/recommended"
+plugins:
+  - '@typescript-eslint'
+  - 'prettier'
+  - 'jest'
+
+parser: vue-eslint-parser
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+
+rules:
+  quotes:
+    - error
+    - single
+  quote-props:
+    - error
+    - consistent
+  prettier/prettier:
+    - error
+    - singleQuote: true
+  vue/multi-word-component-names:
+    - off
+  import/no-anonymous-default-export:
+    - off
+  "@typescript-eslint/ban-ts-comment":
+    - off
+  "vue/v-bind-style":
+    - error
+    - longform

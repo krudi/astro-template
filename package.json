@@ -45,6 +45,7 @@
   "type": "module",
   "dependencies": {
     "@astrojs/check": "^0.3.0",
+    "@astrojs/sitemap": "^3.0.2",
     "astro": "^3.4.0",
     "typescript": "^5.2.2"
   },

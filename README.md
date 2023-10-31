@@ -1,47 +1,56 @@
-# Astro Starter Kit: Minimal
+# astro-template
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A template with [Astro](https://github.com/withastro/astro) with focus on performance and best practices.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Quick start
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> **Note**
+> You need [Node.js](https://github.com/nodejs) on your computer before running [Node.js](https://github.com/nodejs) on your computer before running.
 
-## 🚀 Project Structure
+1. First clone this repository and navigate into your project directory
+2. `copy .env-example .env` - copy the **.env** file
+3. Install the dependencies: `npm run install`
+4. Run the development server: `npm run dev`
 
-Inside of your Astro project, you'll see the following folders and files:
+## Starting development mode
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+To launch the project in development mode with hot module replacement.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- `npm run dev`: to compile the [Astro](https://github.com/withastro/astro) application and serve it to the
+  browser
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+_You can view the development server at <http://localhost:4321>_
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Starting production mode
 
-## 🧞 Commands
+Build and optimize your application with for production.
 
-All commands are run from the root of the project, from a terminal:
+- `npm run build`: build for production with minification
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Starting preview mode
 
-## 👀 Want to learn more?
+The option shows the current changes, that are made in development mode to check that everything works before deploying the condo to production.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `npm run preview`: shows a live project preview
+
+## Commands for linting/fixing files
+
+Navigate into your project directory and start linting your files
+
+- `npm run lint:js`: lints [JavaScript](https://www.javascript.com) files
+  - `npm run lint:js:fix`: to eliminate all possible errors
+- `npm run lint:css`: lints [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS) files
+  - `npm run lint:css:fix`: to eliminate all possible errors
+- `npm run lint:files`: lints configuration files with [Prettier](https://github.com/prettier/prettier)
+  - `npm run lint:files:fix`: to eliminate all possible errors
+- `npm run lint:full` - to run all lints commands above
+- `npm run lint:full:fix` - to run all lints all commands above and fix those automatically
+
+## What's more?
+
+- [SASS](https://sass-lang.com)
+
+## Additional information
+
+- `npx npm-check-updates` - to check if some [npm](https://www.npmjs.com) packages are needed
+- `npx npm-check-updates -u` - to upgrade all [npm](https://www.npmjs.com) packages

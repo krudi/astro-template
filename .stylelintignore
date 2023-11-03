@@ -1,7 +1,5 @@
-# Vue and Nuxt files
+# Astro files
 
-.nuxt
-.output
 dist
 
 # Vercel files

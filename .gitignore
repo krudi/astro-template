@@ -1,20 +1,45 @@
-# build output
+# Astro files
+
 dist/
 .astro/
 
-# dependencies
-node_modules/
+# Vercel files
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+.vercel
 
+# Jest files
 
-# environment variables
-.env
-.env.production
+coverage
 
-# macOS-specific files
+# Dependency directories
+
+node_modules
+
+# ESLint files
+
+.eslintcache
+
+# TypeScript files
+
+tsconfig.tsbuildinfo
+
+# macOS and iOS files
+
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled files
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Secret files
+
+*.der
+*.key
+*.pem

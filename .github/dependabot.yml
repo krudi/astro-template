@@ -4,3 +4,34 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - "krudi"
+    assignees:
+      - "krudi"
+    groups:
+      Actro:
+        patterns:
+          - astro
+          - "astro/*"
+      TypeScript:
+        patterns:
+          - typescript
+          - ts-node
+          - pro-types
+          - "@types/*"
+      ESLint:
+        patterns:
+          - eslint
+          - "@typescript-eslint/*"
+      StyleSheet:
+        patterns:
+          - sass
+      Commit:
+          patterns:
+            - husky
+            - lint-staged
+            - "@commitlint/*"
+      Lint:
+        patterns:
+          - stylelint
+          - prettier

@@ -1,39 +1,43 @@
 ---
 import '~/styles/styles.css';
 
-import Seo from "~/components/Global/Head.astro"
-import Navigation from "~/components/Navigation.astro"
-import Header from "~/components/Header.astro"
-import Footer from "~/components/Footer.astro"
+import Seo from '~/components/Global/Head.astro';
+import Navigation from '~/components/Navigation.astro';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <Seo
-      title="astro-template"
-      description="A template with Astro with focus on performance and best practices."
-      keywords="boilerplate",
-      url={import.meta.env.ASTRO_URL}
-      image="/images/meta-tags/page-view.webp"
-      imageAlt="Alternative description"
-      twitterCreator="@twitter"
-      twitterSite="1467726470533754880"
-      twitterCreatorId="1467726470533754880"
-    />
-  </head>
+<!doctype html>
+<html
+    lang="en"
+    dir="ltr"
+>
+    <head>
+        <Seo
+            title="astro-template"
+            description="A template with Astro with focus on performance and best practices."
+            keywords="boilerplate"
+            ,
+            url={import.meta.env.ASTRO_URL}
+            image="/images/meta-tags/page-view.webp"
+            imageAlt="Alternative description"
+            twitterCreator="@twitter"
+            twitterSite="1467726470533754880"
+            twitterCreatorId="1467726470533754880"
+        />
+    </head>
 
-  <body>
-    <div class="container">
-      <Navigation />
+    <body>
+        <div class="container">
+            <Navigation />
 
-      <Header />
+            <Header />
 
-      <main class="main">
-        <slot />
-      </main>
+            <main class="main">
+                <slot />
+            </main>
 
-      <Footer />
-    </div>
-  </body>
+            <Footer />
+        </div>
+    </body>
 </html>

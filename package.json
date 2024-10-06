@@ -1,77 +1,76 @@
 {
-  "name": "astro-template",
-  "description": "A template with Astro with focus on performance and best practices.",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/krudi/astro-template/LICENSE"
+    "name": "astro-template",
+    "description": "A template with Astro with focus on performance and best practices.",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/krudi/astro-template/LICENSE"
+        }
+    ],
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "authors",
+            "email": "example@mail.com",
+            "url": "https://github.com/krudi/astro-template"
+        }
+    ],
+    "private": false,
+    "homepage": "https://github.com/krudi/astro-template#readme",
+    "bugs": {
+        "url": "https://github.com/krudi/astro-template/issues"
+    },
+    "keywords": [
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krudi/astro-template.git"
+    },
+    "engines": {
+        "node": ">= 20.11.0",
+        "npm": ">= 10.8.1"
+    },
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "lint:js": "eslint -c ./eslint.config.mjs",
+        "lint:js:fix": "eslint -c ./eslint.config.mjs --fix",
+        "lint:css": "stylelint --c ./stylelint.config.mjs **/*.css",
+        "lint:css:fix": "stylelint -c ./stylelint.config.mjs --fix **/*.css",
+        "lint:files": "prettier --check \"**/*.{js,ts,css,html,astro,xml,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:files:fix": "prettier --write \"**/*.{js,ts,css,html,astro,xml,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:full": "npm run lint:js && npm run lint:css && npm run lint:files",
+        "lint:full:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:files:fix"
+    },
+    "type": "module",
+    "dependencies": {
+        "@astrojs/check": "^0.9.3",
+        "@astrojs/node": "^8.3.4",
+        "@astrojs/sitemap": "^3.1.6",
+        "astro": "^4.15.10"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.11.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.7.4",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.11.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "postcss": "^8.4.47",
+        "postcss-import": "^16.1.0",
+        "postcss-load-config": "^6.0.1",
+        "postcss-nested": "^6.2.0",
+        "postcss-syntax": "^0.36.2",
+        "prettier": "^3.3.3",
+        "prettier-plugin-astro": "^0.14.1",
+        "stylelint": "^16.9.0",
+        "stylelint-config-standard": "^36.0.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2",
+        "typescript-eslint": "^8.8.0"
     }
-  ],
-  "version": "0.1.0",
-  "authors": [
-    {
-      "name": "authors",
-      "email": "example@mail.com",
-      "url": "https://github.com/krudi/astro-template"
-    }
-  ],
-  "private": false,
-  "homepage": "https://github.com/krudi/astro-template#readme",
-  "bugs": {
-    "url": "https://github.com/krudi/astro-template/issues"
-  },
-  "keywords": [
-    "template"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/krudi/astro-template.git"
-  },
-  "funding": [
-    {
-      "type": "individual",
-      "url": "http://example.com/donate"
-    }
-  ],
-  "engines": {
-    "node": ">= 20.11.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint:js": "eslint --ext .js,.ts,.astro .",
-    "lint:js:fix": "eslint --fix --ext .js,.ts,.astro .",
-    "lint:css": "stylelint **/*.{css,scss}",
-    "lint:css:fix": "stylelint --fix **/*.{css,scss}",
-    "lint:files": "prettier --check \"**/*.{html,graphql,yml,yaml,astro}\"",
-    "lint:files:fix": "prettier --write \"**/*.{html,graphql,yml,yaml,astro}\"",
-    "lint:full": "npm run lint:js && npm run lint:css && npm run lint:files",
-    "lint:full:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:files:fix",
-    "prepare": "husky install"
-  },
-  "type": "module",
-  "dependencies": {
-    "@astrojs/check": "^0.3.4",
-    "@astrojs/node": "^6.1.0",
-    "@astrojs/sitemap": "^3.0.4",
-    "astro": "^3.4.0",
-    "typescript": "^5.2.2"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^18.2.0",
-    "@commitlint/config-conventional": "^18.4.4",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.18.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-astro": "^0.29.1",
-    "eslint-plugin-prettier": "^5.0.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "sass": "^1.69.5",
-    "stylelint": "^16.1.0",
-    "stylelint-config-standard": "^36.0.0"
-  }
 }

@@ -7,9 +7,10 @@ dist/
 
 .vercel
 
-# Jest files
+# Environment variables
 
-coverage
+*.env
+!.env-*
 
 # Dependency directories
 

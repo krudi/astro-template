@@ -5,5 +5,5 @@
     "stylelint.vscode-stylelint",
     "editorconfig.editorconfig",
     "astro-build.astro-vscode"
-  ],
+  ]
 }

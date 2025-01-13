@@ -50,7 +50,7 @@
         "@astrojs/check": "^0.9.4",
         "@astrojs/node": "^9.0.0",
         "@astrojs/sitemap": "^3.2.1",
-        "astro": "^5.1.4"
+        "astro": "^5.1.5"
     },
     "devDependencies": {
         "@eslint/js": "^9.17.0",

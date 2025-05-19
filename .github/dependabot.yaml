@@ -47,14 +47,12 @@ updates:
                   - 'minor'
                   - 'patch'
 
-
           typings:
               patterns:
                   - '@types/node'
               update-types:
                   - 'minor'
                   - 'patch'
-
 
           build-tools:
               patterns:
@@ -64,7 +62,6 @@ updates:
               update-types:
                   - 'minor'
                   - 'patch'
-
 
           postcss:
               patterns:

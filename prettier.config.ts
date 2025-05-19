@@ -1,4 +1,4 @@
-import { type Config } from "prettier";
+import { type Config } from 'prettier';
 
 const config: Config = {
     plugins: ['prettier-plugin-astro'],
@@ -18,10 +18,10 @@ const config: Config = {
         {
             files: '*.astro',
             options: {
-                parser: 'astro',
-            },
-        },
-    ],
+                parser: 'astro'
+            }
+        }
+    ]
 };
 
 export default config;

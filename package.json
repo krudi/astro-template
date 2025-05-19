@@ -31,6 +31,7 @@
         "node": ">= 23.11.0",
         "npm": ">= 10.8.1"
     },
+    "type": "module",
     "scripts": {
         "dev": "astro dev",
         "build": "astro check && astro build",
@@ -40,12 +41,11 @@
         "lint:js:fix": "eslint -c ./eslint.config.ts --fix",
         "lint:css": "stylelint --c ./stylelint.config.ts **/*.css",
         "lint:css:fix": "stylelint -c ./stylelint.config.ts --fix **/*.css",
-        "lint:files": "prettier --check \"**/*.{js,ts,css,html,astro,xml,yaml,yml,json,json5,graphql,gql}\"",
-        "lint:files:fix": "prettier --write \"**/*.{js,ts,css,html,astro,xml,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:files": "prettier --check \"**/*.{js,ts,css,html,astro,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:files:fix": "prettier --write \"**/*.{js,ts,css,html,astro,yaml,yml,json,json5,graphql,gql}\"",
         "lint:full": "npm run lint:js && npm run lint:css && npm run lint:files",
         "lint:full:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:files:fix"
     },
-    "type": "module",
     "dependencies": {
         "@astrojs/check": "^0.9.4",
         "@astrojs/node": "^9.2.1",

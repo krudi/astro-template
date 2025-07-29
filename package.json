@@ -48,9 +48,9 @@
     },
     "dependencies": {
         "@astrojs/check": "^0.9.4",
-        "@astrojs/node": "^9.2.2",
-        "@astrojs/sitemap": "^3.4.1",
-        "astro": "^5.9.3"
+        "@astrojs/node": "^9.3.0",
+        "@astrojs/sitemap": "^3.4.2",
+        "astro": "^5.12.4"
     },
     "devDependencies": {
         "@eslint/js": "^9.29.0",
